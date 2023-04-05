@@ -231,3 +231,7 @@ Route::get('/', function () {
     ];
     return view('welcome', $data);
 });
+
+Route::get("/single", function() {
+    return view("pages.single");
+});

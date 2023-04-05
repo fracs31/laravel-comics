@@ -20,8 +20,16 @@
     @include("partials.header")
     <!-- Main -->
     <main class="main-content">
-        {{-- Contenuto --}}
-        @yield("content")
+        {{-- Content --}}
+        <div class="page">
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <!-- Immagine -->
+                <img class="jumbotron__img" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="Jumbotron">
+            </div>
+            {{-- Contenuto --}}
+            @yield("content")
+        </div>
     </main>
     <!-- Footer -->
     @include("partials.footer")

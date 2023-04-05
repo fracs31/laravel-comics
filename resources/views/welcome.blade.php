@@ -16,11 +16,6 @@
     @section('content')
         <!-- Contenuto -->
         <div class="content">
-            <!-- Jumbotron -->
-            <div class="jumbotron">
-                <!-- Immagine -->
-                <img class="jumbotron__img" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="Jumbotron">
-            </div>
             <!-- Serie -->
             <div class="current-series">
                 <!-- Container -->
