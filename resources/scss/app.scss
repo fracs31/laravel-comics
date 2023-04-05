@@ -1,1 +1,79 @@
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+/* Regole generali */
+:root {
+    --dark-grey: #303030;
+    --grey: #464646;
+    --light-grey: #959595;
+    --black: #1C1C1C;
+    --blue: #0282F9;
+}
+  
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol, menu {
+    list-style-type: none;
+}
+
+/* Container */
+.container {
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+/* Header */
+.main-header {
+    background-color: white;
+    padding: 20px 0px;
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Immagine usata come logo */
+    .navbar__logo--img {
+        width: 80px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+
+    /* Lista della Navbar */
+    .navbar__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Elementi della lista della Navbar */
+    .navbar__list-item {
+        text-transform: uppercase;
+        color: var(--grey);
+        font-size: 14px;
+        padding: 40px 0px;
+    }
+
+    /* Elemento della lista della Navbar attivo */
+    .navbar__list-item.active {
+        color: var(--blue);
+        position: relative;
+    }
+
+    /* Barra dell'elemento della lista della Navbar attivo */
+    .navbar__list-item.active::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--blue);
+        position: absolute;
+        left: 0px;
+        bottom: -20px;
+    }
+}
