@@ -15,6 +15,42 @@
                 <li class="navbar__list-item">
                     Characters
                 </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item active">
+                    Comics
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    Movies
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    TV
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    Games
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    Collectibles
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    Videos
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    Fans
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    News
+                </li>
+                <!-- Elemento della lista -->
+                <li class="navbar__list-item">
+                    Shop
+                </li>
             </ul>
         </nav>
     </div>
