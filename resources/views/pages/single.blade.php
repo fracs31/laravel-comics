@@ -14,7 +14,28 @@
     @extends('layouts.app')
     {{-- Contenuto --}}
     @section('content')
-        
+        {{-- Single --}}
+        <div class="single">
+            {{-- Cima --}}
+            <div class="single-top">
+                {{-- Container --}}
+                <div class="container">
+                    {{-- Immagine --}}
+                    <div class="single-top__img">
+                        {{-- Immagine --}}
+                        <img class="single-top__img--img" src="{{ Vite::asset("resources/img/prova.jpg") }}" alt="{{ $comics[0]["title"] }}">
+                    </div>
+                </div>
+            </div>
+            {{-- Centro --}}
+            <div class="single-center">
+
+            </div>
+            {{-- Fondo --}}
+            <div class="single-bottom">
+
+            </div>
+        </div>
     @endsection
 </body>
 </html>
