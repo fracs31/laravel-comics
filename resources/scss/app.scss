@@ -72,6 +72,112 @@ ul, ol, menu {
     }
 }
 
+/* Main */
+.main-content {
+    /* Contenuto */
+    .content {
+        background-color: var(--black);
+        color: white;
+        /* Carta */
+        .card {
+            width: 185px;
+        }
+        /* Immagine della carta */
+        .card__img {
+            margin-bottom: 15px;
+        }
+        /* Immagine usata della carta */
+        .card__img--img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: top;
+        }
+        /* Titolo usato della carta */
+        .card__title--title {
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 14px;
+            color: white;
+        }
+     }
+    /* Jumbotron */
+    .jumbotron {
+        height: 400px;
+        width: 100%;
+    }
+    /* Immagine del Jumbotron */
+    .jumbotron__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    /* Titolo di Current Series */
+    .current-series__title {
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: var(--blue);
+        max-width: fit-content;
+        padding: 15px 10px;
+        position: relative;
+        top: -25px;
+        z-index: 1;
+    }
+    /* Lista delle serie */
+    .current-series__list {
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 25px;
+    }
+    /* Bottone */
+    .current-series__button {
+        display: flex;
+        justify-content: center;
+    }
+    /* Bottone effettivo */
+    .current-series__button--btn {
+        text-transform: uppercase;
+        background-color: var(--blue);
+        border: none;
+        color: white;
+        font-size: 14px;
+        padding: 15px 60px;
+        margin-bottom: 20px;
+    }
+    /* Discover */
+    .discover {
+        background-color: var(--blue);
+        padding: 45px 0px;
+        position: relative;
+        z-index: 1;
+    }
+    /* Lista di Discover */
+    .discover__list {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    /* Elemento della lista di Discover */
+    .discover__list-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    /* Immagine dell'elemento della lista di Discover */
+    .discover__list-item--img__img {
+        width: 50px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+    /* Descrizione dell'elemento della lista di Discover */
+    .discover__list-item--description {
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
 /* Footer */
 .page-footer {
     background-image: url("../img/footer-bg.jpg");
