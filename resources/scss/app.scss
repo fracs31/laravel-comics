@@ -29,28 +29,24 @@ ul, ol, menu {
 .main-header {
     background-color: white;
     padding: 20px 0px;
-
     /* Navbar */
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     /* Immagine usata come logo */
     .navbar__logo--img {
         width: 80px;
         aspect-ratio: 1/1;
         object-fit: contain;
     }
-
     /* Lista della Navbar */
     .navbar__list {
         display: flex;
         align-items: center;
         gap: 30px;
     }
-
     /* Elementi della lista della Navbar */
     .navbar__list-item {
         text-transform: uppercase;
@@ -58,13 +54,11 @@ ul, ol, menu {
         font-size: 14px;
         padding: 40px 0px;
     }
-
     /* Elemento della lista della Navbar attivo */
     .navbar__list-item.active {
         color: var(--blue);
         position: relative;
     }
-
     /* Barra dell'elemento della lista della Navbar attivo */
     .navbar__list-item.active::after {
         content: "";
@@ -75,5 +69,92 @@ ul, ol, menu {
         position: absolute;
         left: 0px;
         bottom: -20px;
+    }
+}
+
+/* Footer */
+.page-footer {
+    background-image: url("../img/footer-bg.jpg");
+    /* Footer Top */
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Informazioni */
+    .infos {
+        padding: 35px 0px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /* Titolo del box informazioni */
+    .box-info__title {
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    /* Elemento della lista del box informazioni */
+    .box-info__list-item {
+        color: var(--light-grey);
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    /* Logo grande */
+    .big-logo {
+        position: relative;
+    }
+    /* Immagine del logo grande */
+    .big-logo__img {
+        width: 550px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        right: 0px;
+        top: -50px;
+    }
+    /* Footer Bottom */
+    .footer-bottom {
+        background-color: var(--dark-grey);
+        padding: 30px 0px;
+        position: relative;
+        z-index: 1;
+    }
+    /* Sottoiscrizione */
+    .subscription {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Bottone */
+    .sign-up {
+        font-size: 18px;
+        color: white;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 1px solid var(--blue);
+        padding: 15px 10px;
+    }
+    /* Seguici */
+    .follow-us {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    /* Titolo di Seguici */
+    .follow-us__title {
+        color: var(--blue);
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    /* Lista dei social */
+    .follow-us__list {
+        display: flex;
+        gap: 15px;
+    }
+    /* Immagine dell'elemento della lista dei social */
+    .follow-us__list-item--img {
+        width: 35px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
     }
 }
