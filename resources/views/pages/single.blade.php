@@ -69,7 +69,134 @@
             </div>
             {{-- Fondo --}}
             <div class="single-bottom">
-
+                {{-- Container --}}
+                <div class="container">
+                    {{-- Informazioni aggiuntive del fumetto --}}
+                    <div class="comic-more-info">
+                        {{-- Talenti --}}
+                        <div class="talent">
+                            {{-- Titolo --}}
+                            <h2 class="comic-more-info__title">
+                                Talent
+                            </h2>
+                            {{-- Lista --}}
+                            <div class="box-list">
+                                {{-- Titolo della lista --}}
+                                <h3 class="box-list__title">Art by:</h3>
+                                {{-- Lista --}}
+                                <ul class="list">
+                                    {{-- Ciclo --}}
+                                    @foreach ($comics[0]["artists"] as $artist)
+                                        {{-- Artista --}}
+                                        <li class="list-item">
+                                            {{ $artist }}  
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            {{-- Lista --}}
+                            <div class="box-list">
+                                {{-- Titolo della lista --}}
+                                <h3 class="box-list__title">Written by:</h3>
+                                {{-- Lista --}}
+                                <ul class="list">
+                                    {{-- Ciclo --}}
+                                    @foreach ($comics[0]["writers"] as $writer)
+                                        {{-- Scrittore --}}
+                                        <li class="list-item">
+                                            {{ $writer }}  
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                        {{-- Specifiche --}}
+                        <div class="specs">
+                            {{-- Titolo --}}
+                            <h2 class="comic-more-info__title">
+                                Specs
+                            </h2>
+                            {{-- Lista --}}
+                            <div class="box-list">
+                                {{-- Titolo della lista --}}
+                                <h3 class="box-list__title">Series:</h3>
+                                {{-- Lista --}}
+                                <ul class="list">
+                                    {{-- Artista --}}
+                                    <li class="list-item">
+                                        {{ $comics[0]["series"] }}  
+                                    </li>
+                                </ul>
+                            </div>
+                            {{-- Lista --}}
+                            <div class="box-list">
+                                {{-- Titolo della lista --}}
+                                <h3 class="box-list__title">U.S. Price:</h3>
+                                {{-- Lista --}}
+                                <ul class="list">
+                                    {{-- Artista --}}
+                                    <li class="list-item">
+                                        {{ $comics[0]["price"] }}  
+                                    </li>
+                                </ul>
+                            </div>
+                            {{-- Lista --}}
+                            <div class="box-list">
+                                {{-- Titolo della lista --}}
+                                <h3 class="box-list__title">On Sale Date:</h3>
+                                {{-- Lista --}}
+                                <ul class="list">
+                                    {{-- Artista --}}
+                                    <li class="list-item">
+                                        {{ $comics[0]["sale_date"] }}  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Discover --}}
+                    <div class="discover">
+                        {{-- Lista --}}
+                        <ul class="list">
+                            {{-- Elemento della lista --}}
+                            <li class="list-item">
+                                {{-- Titolo --}}
+                                <h4 class="discover__title">
+                                    Digital Comics
+                                </h4>
+                                {{-- Immagine --}}
+                                <img class="discover__img" src="{{ Vite::asset("resources/img/buy-comics-digital-comics.png") }}" alt="">
+                            </li>
+                            {{-- Elemento della lista --}}
+                            <li class="list-item">
+                                {{-- Titolo --}}
+                                <h4 class="discover__title">
+                                    Shop DC
+                                </h4>
+                                {{-- Immagine --}}
+                                <img class="discover__img" src="{{ Vite::asset("resources/img/buy-comics-subscriptions.png") }}" alt="">
+                            </li>
+                            {{-- Elemento della lista --}}
+                            <li class="list-item">
+                                {{-- Titolo --}}
+                                <h4 class="discover__title">
+                                    Comic Shop Locator
+                                </h4>
+                                {{-- Immagine --}}
+                                <img class="discover__img" src="{{ Vite::asset("resources/img/buy-comics-shop-locator.png") }}" alt="">
+                            </li>
+                            {{-- Elemento della lista --}}
+                            <li class="list-item">
+                                {{-- Titolo --}}
+                                <h4 class="discover__title">
+                                    Subscription
+                                </h4>
+                                {{-- Immagine --}}
+                                <img class="discover__img" src="{{ Vite::asset("resources/img/buy-comics-merchandise.png") }}" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     @endsection

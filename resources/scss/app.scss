@@ -250,6 +250,72 @@ ul, ol, menu {
             }
         }
     }
+    /* Fondo di single */
+    .single-bottom {
+        background-color: #F6F6F6;
+        /* Informazioni aggiuntive del fumetto */
+        .comic-more-info {
+            padding-top: 30px;
+            padding-bottom: 100px;
+            display: flex;
+            gap: 50px;
+            /* Talent e Specs */
+            .talent, .specs {
+                flex-basis: calc(100% / 2);
+            }
+            /* Titolo */
+            .comic-more-info__title {
+                margin-bottom: 30px;
+            }
+            /* Box list */
+            .box-list {
+                padding: 5px 0px;
+                display: flex;
+                justify-content: space-between;
+                /* Titolo della box list */
+                .box-list__title {
+                    font-size: 14px;
+                }
+                /* Lista */
+                .list {
+                    width: 325px;
+                    display: flex;
+                    gap: 5px;
+                    flex-wrap: wrap;
+                    /* Elemento della lista */
+                    .list-item {
+                        color: var(--blue);
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        /* Discover */ 
+        .discover {
+            background-color: transparent;
+            padding: 0px;
+            /* Lista */
+            .list {
+                display: flex;
+                /* Elemento della lista */
+                .list-item {
+                    flex-grow: 1;
+                    border: 1px solid var(--light-grey);
+                    padding: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    .discover__title {
+                        text-transform: uppercase;
+                        color: var(--light-grey);
+                    }
+                    /* Immagine */
+                    .discover__img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Footer */
