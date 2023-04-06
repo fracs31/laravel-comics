@@ -29,7 +29,43 @@
             </div>
             {{-- Centro --}}
             <div class="single-center">
-
+                {{-- Container --}}
+                <div class="container">
+                    {{-- Informazioni del fumetto --}}
+                    <div class="comic-info">
+                        {{-- Testo --}}
+                        <div class="comic-info__text">
+                            {{-- Titolo --}}
+                            <h1 class="comic-info__title">
+                                {{ $comics[0]["title"] }}
+                            </h1>
+                            {{-- Stock --}}
+                            <div class="comic-info__stock">
+                                {{-- Prezzo --}}
+                                <h2 class="comic-info__price">
+                                    U.S. Price: <span class="price">{{ $comics[0]["price"] }}</span>
+                                </h2>
+                                {{-- Disponibilità --}}
+                                <h2 class="comic-info__availability">Available</h2>
+                                {{-- Controllo della disponibilità --}}
+                                <h2 class="comic-info__check-availability">
+                                    Check Availability
+                                </h2>
+                            </div>
+                            {{-- Descrizione --}}
+                            <p class="comic-info__description">
+                                {{ $comics[0]["description"] }}
+                            </p>
+                        </div>
+                        {{-- Pubblicità --}}
+                        <div class="adv">
+                            {{-- Testo --}}
+                            <h3 class="adv__title">Advertisement</h3>
+                            {{-- Immagine --}}
+                            <img class="adv__img" src="{{ Vite::asset("resources/img/advs.jpg") }}" alt="Adv">
+                        </div>
+                    </div>
+                </div>
             </div>
             {{-- Fondo --}}
             <div class="single-bottom">

@@ -180,7 +180,7 @@ ul, ol, menu {
     .single-top {
         background-color: var(--blue);
         height: 80px;
-        
+        /* Immagine della cima di single */
         .single-top__img {
             position: relative;
             /* Immagine utlizzata della cima di single */
@@ -190,6 +190,63 @@ ul, ol, menu {
                 position: absolute;
                 left: 0px;
                 top: -220px;
+            }
+        }
+    }
+    /* Centro di single */
+    .single-center {
+        padding-top: 80px;
+        padding-bottom: 70px;
+        /* Info del fumetto */
+        .comic-info {
+            display: flex;
+            gap: 40px;
+            /* Titolo */
+            .comic-info__title {
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            /* Stock */
+            .comic-info__stock {
+                background-color: #55BA59;
+                color: #BAFD9C;
+                margin-bottom: 25px;
+                display: flex;
+                align-items: center;
+                /* Prezzo */
+                .comic-info__price {
+                    padding: 15px 25px;
+                    font-size: 16px;
+                    flex-grow: 1;
+                    /* Prezzo */
+                    .price {
+                        color: white;
+                    }
+                }
+                /* Disponibilità */
+                .comic-info__availability {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    border-right: 1px solid black;
+                    padding: 15px 25px;
+                }
+                /* Controllo della disponibilità */
+                .comic-info__check-availability {
+                    font-size: 16px;
+                    color: white;
+                    padding: 15px 25px;
+                }
+            }
+            /* Titolo della pubblicità */
+            .adv__title {
+                font-size: 16px;
+                text-align: right;
+                color: var(--grey);
+                text-transform: uppercase;
+            }
+            /* Immagine pubblicità */
+            .adv__img {
+                width: 300px;
             }
         }
     }
